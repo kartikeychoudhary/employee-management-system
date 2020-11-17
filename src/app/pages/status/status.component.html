@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="display-4 p-2">
+    Total Employees : <span>{{ employee_count }}</span>
+  </div>
+  <hr />
+  <div class="row p-4">
+    <div class="col-12">
+      <div style="display: block">
+        <canvas
+          baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"
+        >
+        </canvas>
+      </div>
+    </div>
+    <div class="col-12 p-4">
+      <hr />
+      <div class="display-4">
+          Salary's Sum : {{getSalary()}} ₹
+      </div>
+      <hr />
+    </div>
+  </div>
+</div>

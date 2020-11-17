@@ -1,0 +1,101 @@
+<nav class="navbar">
+  <div class="row w-100">
+    <div class="col-9" *ngIf="!doj">
+      <label for="search">Search</label>
+      <input
+        type="text"
+        class="form-control w-100"
+        name="searchBar"
+        [ngModel]="search"
+        (keyup)="onKey($event)"
+        placeholder="Search Keywords"
+      />
+    </div>
+
+    <div class="col-9" *ngIf="doj">
+      <div class="row">
+        <div class="col-6">
+          <label for="searchType">Start Date</label>
+          <input class="form-control" type="date" (change)="handleStartDate($event)"/>
+        </div>
+        <div class="col-6">
+          <label for="searchType" >End Date</label>
+          <input class="form-control" type="date" (change)="handleEndDate($event)" />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="form-group">
+        <label for="searchType">Type</label>
+        <select class="form-control" (change)="handleSearchType($event)">
+          <option value="fname">Name</option>
+          <option value="designation">Designation</option>
+          <option value="salary" *ngIf="admin">Salary</option>
+          <option value="doj" *ngIf="admin">Date of Joining</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<table class="table m-0 p-0 bg-white" *ngIf="employees.length > 0">
+  <thead>
+    <tr>
+      <th (click)="sort('id')">Id&nbsp;<i class="fa fa-sort"></i></th>
+      <th (click)="sort('fname')">Name&nbsp;<i class="fa fa-sort"></i></th>
+      <th (click)="sort('designation')">
+        Designation&nbsp;<i class="fa fa-sort"></i>
+      </th>
+      <th (click)="sort('salary')" *ngIf="admin">
+        Salary (₹)&nbsp;<i class="fa fa-sort"></i>
+      </th>
+      <th *ngIf="admin">Date of Joining</th>
+      <!-- <th *ngIf="admin">More</th> -->
+      <th *ngIf="admin">Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      class="text-center"
+      *ngFor="
+        let employee of employees
+          | orderBy: key:reverse
+          | paginate: { itemsPerPage: 10, currentPage: p }
+      "
+    >
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.fname }} {{ employee.lname }}</td>
+      <td>{{ employee.designation }}</td>
+      <td *ngIf="admin">{{ employee.salary }}</td>
+      <td *ngIf="admin">{{ employee.doj }}</td>
+      <td class="btn-primary" *ngIf="admin">
+        <i class="fa fa-info-circle"></i>
+      </td>
+      <td class="btn-warning" (click)="redirectEdit(employee.id)" *ngIf="admin">
+        <i class="fas fa-edit fa-lg"></i>
+      </td>
+    </tr>
+    <!-- <tr>
+            <td colspan="7">
+              <div>
+                  <div class="row">
+                      <div class="col">skills</div>
+                      <div class="col">{{employee.skills}}</div>
+                  </div>
+                </div>
+            </td>
+        </tr> -->
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="7">
+        <div class="text-end">
+          <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<h3 class="container" *ngIf="employees.length == 0">No Data to Display</h3>

@@ -1,0 +1,695 @@
+{
+  "employee": {
+    "ethelda_1": {
+      "password": 12345678,
+      "id": 1
+    },
+    "augustus_2": {
+      "password": 12345678,
+      "id": 2
+    },
+    "freddi_3": {
+      "password": 12345678,
+      "id": 3
+    },
+    "roana_4": {
+      "password": 12345678,
+      "id": 4
+    },
+    "guenevere_5": {
+      "password": 12345678,
+      "id": 5
+    },
+    "olenka_6": {
+      "password": 12345678,
+      "id": 6
+    },
+    "rana_7": {
+      "password": 12345678,
+      "id": 7
+    },
+    "lyndsey_8": {
+      "password": 12345678,
+      "id": 8
+    },
+    "yalonda_9": {
+      "password": 12345678,
+      "id": 9
+    },
+    "tatiania_10": {
+      "password": 12345678,
+      "id": 10
+    },
+    "julius_11": {
+      "password": 12345678,
+      "id": 11
+    },
+    "rosalinde_12": {
+      "password": 12345678,
+      "id": 12
+    },
+    "taffy_13": {
+      "password": 12345678,
+      "id": 13
+    },
+    "kirsteni_14": {
+      "password": 12345678,
+      "id": 14
+    },
+    "archambault_15": {
+      "password": 12345678,
+      "id": 15
+    },
+    "barbra_16": {
+      "password": 12345678,
+      "id": 16
+    },
+    "eugen_17": {
+      "password": 12345678,
+      "id": 17
+    },
+    "barnett_18": {
+      "password": 12345678,
+      "id": 18
+    },
+    "becka_19": {
+      "password": 12345678,
+      "id": 19
+    },
+    "marris_20": {
+      "password": 12345678,
+      "id": 20
+    },
+    "mehetabel_21": {
+      "password": 12345678,
+      "id": 21
+    },
+    "kristel_22": {
+      "password": 12345678,
+      "id": 22
+    },
+    "bobbi_23": {
+      "password": 12345678,
+      "id": 23
+    },
+    "cacilie_24": {
+      "password": 12345678,
+      "id": 24
+    },
+    "desiri_25": {
+      "password": 12345678,
+      "id": 25
+    },
+    "tabb_26": {
+      "password": 12345678,
+      "id": 26
+    },
+    "aida_27": {
+      "password": 12345678,
+      "role": "admin",
+      "id": 27
+    },
+    "corney_28": {
+      "password": 12345678,
+      "id": 28
+    },
+    "cyrill_29": {
+      "password": 12345678,
+      "id": 29
+    },
+    "lukas_30": {
+      "password": 12345678,
+      "id": 30
+    },
+    "stuart_31": {
+      "password": 12345678,
+      "id": 31
+    },
+    "ardra_32": {
+      "password": 12345678,
+      "id": 32
+    },
+    "foster_33": {
+      "password": 12345678,
+      "id": 33
+    },
+    "othella_34": {
+      "password": 12345678,
+      "id": 34
+    },
+    "tatum_35": {
+      "password": 12345678,
+      "id": 35
+    },
+    "marijo_36": {
+      "password": 12345678,
+      "id": 36
+    },
+    "thaddeus_37": {
+      "password": 12345678,
+      "id": 37
+    },
+    "jacquetta_38": {
+      "password": 12345678,
+      "id": 38
+    },
+    "ruthi_39": {
+      "password": 12345678,
+      "id": 39
+    },
+    "maurice_40": {
+      "password": 12345678,
+      "id": 40
+    },
+    "dennie_41": {
+      "password": 12345678,
+      "id": 41
+    },
+    "constantine_42": {
+      "password": 12345678,
+      "id": 42
+    },
+    "fairfax_43": {
+      "password": 12345678,
+      "id": 43
+    },
+    "merline_44": {
+      "password": 12345678,
+      "id": 44
+    },
+    "iain_45": {
+      "password": 12345678,
+      "id": 45
+    },
+    "row_46": {
+      "password": 12345678,
+      "id": 46
+    },
+    "lilli_47": {
+      "password": 12345678,
+      "id": 47
+    },
+    "zorine_48": {
+      "password": 12345678,
+      "id": 48
+    },
+    "pembroke_49": {
+      "password": 12345678,
+      "id": 49
+    },
+    "jobyna_50": {
+      "password": 12345678,
+      "id": 50
+    },
+    "Kartikey_51": {
+      "id": "deleted",
+      "password": "deleted"
+    },
+    "kartikey_51": {
+      "id": 51,
+      "password": "12345678"
+    },
+    "kalpesh_52": {
+      "id": 52,
+      "password": "12345678"
+    },
+    "kalpesh_53": {
+      "id": "deleted",
+      "password": "deleted"
+    },
+    "kalpesh_54": {
+      "id": "deleted",
+      "password": "deleted"
+    }
+  },
+  "employee_data": [
+    {
+      "id": 1,
+      "fname": "Ethelda",
+      "lname": "MacGilpatrick",
+      "designation": "Team Lead",
+      "salary": 850000,
+      "doj": "9/30/2009",
+      "skills": 3
+    },
+    {
+      "id": 2,
+      "fname": "Augustus",
+      "lname": "Dibdin",
+      "designation": "Senior Software Engineer",
+      "salary": 850000,
+      "doj": "5/14/2002",
+      "skills": 3
+    },
+    {
+      "id": 3,
+      "fname": "Freddi",
+      "lname": "Trobey",
+      "designation": "Technical Lead",
+      "salary": 1250000,
+      "doj": "2/11/2009",
+      "skills": 4
+    },
+    {
+      "id": 4,
+      "fname": "Roana",
+      "lname": "McCrystal",
+      "designation": "Team Lead",
+      "salary": 1050000,
+      "doj": "6/11/2010",
+      "skills": 4
+    },
+    {
+      "id": 5,
+      "fname": "Guenevere",
+      "lname": "Grishakin",
+      "designation": "Senior Technical Lead",
+      "salary": 1250000,
+      "doj": "9/22/2004",
+      "skills": 5
+    },
+    {
+      "id": 6,
+      "fname": "Olenka",
+      "lname": "Benitez",
+      "designation": "Senior Technical Lead",
+      "salary": 1250000,
+      "doj": "7/11/2010",
+      "skills": 5
+    },
+    {
+      "id": 7,
+      "fname": "Rana",
+      "lname": "Hattiff",
+      "designation": "Technical Manager",
+      "salary": 1500000,
+      "doj": "12/30/2002",
+      "skills": 5
+    },
+    {
+      "id": 8,
+      "fname": "Lyndsey",
+      "lname": "Downage",
+      "designation": "Associate Software Engineer",
+      "salary": 450000,
+      "doj": "8/27/2007",
+      "skills": 1
+    },
+    {
+      "id": 9,
+      "fname": "Yalonda",
+      "lname": "McGaughay",
+      "designation": "Technical Manager",
+      "salary": 1500000,
+      "doj": "2/9/2009",
+      "skills": 5
+    },
+    {
+      "id": 10,
+      "fname": "Tatiania",
+      "lname": "Fawdrie",
+      "designation": "Team Lead",
+      "salary": 1050000,
+      "doj": "11/5/2003",
+      "skills": 4
+    },
+    {
+      "id": 11,
+      "fname": "Julius",
+      "lname": "Dow",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "7/13/2004",
+      "skills": 5
+    },
+    {
+      "id": 12,
+      "fname": "Rosalinde",
+      "lname": "Coombe",
+      "designation": "Technical Manager",
+      "salary": 1500000,
+      "doj": "9/18/2020",
+      "skills": 5
+    },
+    {
+      "id": 13,
+      "fname": "Taffy",
+      "lname": "Rollin",
+      "designation": "Technical Manager",
+      "salary": 1500000,
+      "doj": "10/20/2002",
+      "skills": 5
+    },
+    {
+      "id": 14,
+      "fname": "Kirsteni",
+      "lname": "Peltzer",
+      "designation": "Technical Lead",
+      "salary": 1250000,
+      "doj": "11/22/2002",
+      "skills": 4
+    },
+    {
+      "id": 15,
+      "fname": "Archambault",
+      "lname": "Fellowes",
+      "designation": "Senior Software Engineer",
+      "salary": 850000,
+      "doj": "3/23/2011",
+      "skills": 3
+    },
+    {
+      "id": 16,
+      "fname": "Barbra",
+      "lname": "Seward",
+      "designation": "Team Lead",
+      "salary": 1050000,
+      "doj": "10/22/2012",
+      "skills": 4
+    },
+    {
+      "id": 17,
+      "fname": "Eugen",
+      "lname": "Hulance",
+      "designation": "Technical Lead",
+      "salary": 1250000,
+      "doj": "6/20/2010",
+      "skills": 4
+    },
+    {
+      "id": 18,
+      "fname": "Barnett",
+      "lname": "Godspede",
+      "designation": "Senior Technical Lead",
+      "salary": 1250000,
+      "doj": "8/20/2001",
+      "skills": 5
+    },
+    {
+      "id": 19,
+      "fname": "Becka",
+      "lname": "Kacheler",
+      "designation": "Team Lead",
+      "salary": 1050000,
+      "doj": "4/25/2012",
+      "skills": 4
+    },
+    {
+      "id": 20,
+      "fname": "Marris",
+      "lname": "Sparrowe",
+      "designation": "Associate Software Engineer",
+      "salary": 450000,
+      "doj": "7/2/2009",
+      "skills": 1
+    },
+    {
+      "id": 21,
+      "fname": "Mehetabel",
+      "lname": "Morford",
+      "designation": "Associate Software Engineer",
+      "salary": 450000,
+      "doj": "5/27/2013",
+      "skills": 1
+    },
+    {
+      "id": 22,
+      "fname": "Kristel",
+      "lname": "Deeley",
+      "designation": "Technical Lead",
+      "salary": 1250000,
+      "doj": "3/12/2017",
+      "skills": 4
+    },
+    {
+      "id": 23,
+      "fname": "Bobbi",
+      "lname": "Keaveney",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "9/16/2007",
+      "skills": 5
+    },
+    {
+      "id": 24,
+      "fname": "Cacilie",
+      "lname": "Colquhoun",
+      "designation": "Team Lead",
+      "salary": 1050000,
+      "doj": "10/10/2007",
+      "skills": 4
+    },
+    {
+      "id": 25,
+      "fname": "Desiri",
+      "lname": "Seczyk",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "3/29/2010",
+      "skills": 5
+    },
+    {
+      "id": 26,
+      "fname": "Tabb",
+      "lname": "Gartsyde",
+      "designation": "Software Engineer",
+      "salary": 650000,
+      "doj": "12/10/2006",
+      "skills": 2
+    },
+    {
+      "id": 27,
+      "fname": "Aida",
+      "lname": "Stuchberry",
+      "designation": "Project Manager",
+      "salary": 1800000,
+      "doj": "7/4/2016",
+      "skills": "5"
+    },
+    {
+      "id": 28,
+      "fname": "Corney",
+      "lname": "Goodsal",
+      "designation": "Team Lead",
+      "salary": 1050000,
+      "doj": "2/2/2006",
+      "skills": 4
+    },
+    {
+      "id": 29,
+      "fname": "Cyrill",
+      "lname": "Osman",
+      "designation": "Technical Lead",
+      "salary": 1250000,
+      "doj": "11/14/2011",
+      "skills": 4
+    },
+    {
+      "id": 30,
+      "fname": "Lukas",
+      "lname": "Anthill",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "1/24/2002",
+      "skills": 5
+    },
+    {
+      "id": 31,
+      "fname": "Stuart",
+      "lname": "Van der Velden",
+      "designation": "Project Manager",
+      "salary": "450000",
+      "doj": "10/23/2009",
+      "skills": 5
+    },
+    {
+      "id": 32,
+      "fname": "Ardra",
+      "lname": "Bidewell",
+      "designation": "Senior Software Engineer",
+      "salary": 850000,
+      "doj": "10/3/2016",
+      "skills": 3
+    },
+    {
+      "id": 33,
+      "fname": "Foster",
+      "lname": "Summerscales",
+      "designation": "Associate Software Engineer",
+      "salary": 450000,
+      "doj": "4/3/2010",
+      "skills": 1
+    },
+    {
+      "id": 34,
+      "fname": "Othella",
+      "lname": "Venner",
+      "designation": "Associate Software Engineer",
+      "salary": 450000,
+      "doj": "4/27/2004",
+      "skills": 1
+    },
+    {
+      "id": 35,
+      "fname": "Tatum",
+      "lname": "Bosse",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "7/6/2002",
+      "skills": 5
+    },
+    {
+      "id": 36,
+      "fname": "Marijo",
+      "lname": "Whitehorne",
+      "designation": "Software Engineer",
+      "salary": 650000,
+      "doj": "12/23/2011",
+      "skills": 2
+    },
+    {
+      "id": 37,
+      "fname": "Thaddeus",
+      "lname": "Nussen",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "4/13/2001",
+      "skills": 5
+    },
+    {
+      "id": 38,
+      "fname": "Jacquetta",
+      "lname": "Litel",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "4/9/2013",
+      "skills": 5
+    },
+    {
+      "id": 39,
+      "fname": "Ruthi",
+      "lname": "Skene",
+      "designation": "Senior Technical Lead",
+      "salary": 1250000,
+      "doj": "8/15/2001",
+      "skills": 5
+    },
+    {
+      "id": 40,
+      "fname": "Maurice",
+      "lname": "Weblin",
+      "designation": "Technical Manager",
+      "salary": 1500000,
+      "doj": "11/29/2004",
+      "skills": 5
+    },
+    {
+      "id": 41,
+      "fname": "Dennie",
+      "lname": "Dawltrey",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "12/20/2013",
+      "skills": 5
+    },
+    {
+      "id": 42,
+      "fname": "Constantine",
+      "lname": "Lockery",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "6/29/2019",
+      "skills": 5
+    },
+    {
+      "id": 43,
+      "fname": "Fairfax",
+      "lname": "Ingle",
+      "designation": "Team Lead",
+      "salary": 1050000,
+      "doj": "9/2/2019",
+      "skills": 4
+    },
+    {
+      "id": 44,
+      "fname": "Merline",
+      "lname": "McGiffie",
+      "designation": "Software Engineer",
+      "salary": 650000,
+      "doj": "12/20/2014",
+      "skills": 2
+    },
+    {
+      "id": 45,
+      "fname": "Iain",
+      "lname": "Antonelli",
+      "designation": "Senior Technical Lead",
+      "salary": 1250000,
+      "doj": "9/10/2011",
+      "skills": 5
+    },
+    {
+      "id": 46,
+      "fname": "Row",
+      "lname": "Bletso",
+      "designation": "Senior Technical Lead",
+      "salary": 1250000,
+      "doj": "4/26/2014",
+      "skills": 5
+    },
+    {
+      "id": 47,
+      "fname": "Lilli",
+      "lname": "Suthworth",
+      "designation": "Technical Lead",
+      "salary": 1250000,
+      "doj": "7/1/2018",
+      "skills": 4
+    },
+    {
+      "id": 48,
+      "fname": "Zorine",
+      "lname": "Casterot",
+      "designation": "Team Lead",
+      "salary": 1050000,
+      "doj": "1/28/2011",
+      "skills": 4
+    },
+    {
+      "id": 49,
+      "fname": "Pembroke",
+      "lname": "Hales",
+      "designation": "Project Manager",
+      "salary": 1800000,
+      "doj": "6/12/2003",
+      "skills": 5
+    },
+    {
+      "id": 50,
+      "fname": "Jobyna",
+      "lname": "Bonson",
+      "designation": "Project Manager",
+      "salary": 1800000,
+      "doj": "8/28/2013",
+      "skills": 5
+    },
+    {
+      "fname": "kartikey",
+      "lname": "choudhary",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "2020-11-02",
+      "skills": "3",
+      "id": 51
+    },
+    {
+      "fname": "kalpesh",
+      "lname": "thombre",
+      "designation": "Software Engineer",
+      "salary": "750000",
+      "doj": "2020-11-02",
+      "skills": "3",
+      "id": 52
+    }
+  ]
+}

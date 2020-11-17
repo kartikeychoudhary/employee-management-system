@@ -1,0 +1,26 @@
+<tr class="text-center" *ngIf="employee">
+    <td>{{ employee.id }}</td>
+    <td>{{ employee.fname }} {{ employee.lname }}</td>
+    <td>{{ employee.designation }}</td>
+    <td>{{ employee.salary }}</td>
+    <td>{{ employee.doj }}</td>
+    <td
+      class="accordion-toggle collapsed"
+      id="accordion1"
+      data-toggle="collapse"
+      data-parent="#accordion1"
+      href="#collapseOne"
+    >
+      +
+    </td>
+  </tr>
+  <tr>
+    <td colspan="5">
+      <div id="collapseOne" class="collapse in p-3">
+        <div class="row">
+          <div class="col-2">skills</div>
+          <div class="col-6">{{employee.skills}}</div>
+        </div>
+      </div>
+    </td>
+  </tr>

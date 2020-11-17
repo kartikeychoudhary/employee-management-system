@@ -1,0 +1,17 @@
+<div class="card" *ngIf="employee">
+    <img src="https://picsum.photos/800/200?random=2" alt="" class="card-img-top">
+
+    <div class="row p-4">
+        <div class="col-6">
+            <h3 class="display-2">
+                Hi, {{employee.fname}}
+            </h3>
+            <p class="blockquote text-center">😊 - Have a great Day</p>
+        </div>
+        <div class="col-6 text-right">
+            <h5>
+                Last Login : <span class="lead">{{lastLogin}}</span>
+            </h5>
+        </div>
+    </div>
+</div>
