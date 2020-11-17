@@ -200,26 +200,6 @@
     "jobyna_50": {
       "password": 12345678,
       "id": 50
-    },
-    "Kartikey_51": {
-      "id": "deleted",
-      "password": "deleted"
-    },
-    "kartikey_51": {
-      "id": 51,
-      "password": "12345678"
-    },
-    "kalpesh_52": {
-      "id": 52,
-      "password": "12345678"
-    },
-    "kalpesh_53": {
-      "id": "deleted",
-      "password": "deleted"
-    },
-    "kalpesh_54": {
-      "id": "deleted",
-      "password": "deleted"
     }
   },
   "employee_data": [
@@ -672,24 +652,6 @@
       "salary": 1800000,
       "doj": "8/28/2013",
       "skills": 5
-    },
-    {
-      "fname": "kartikey",
-      "lname": "choudhary",
-      "designation": "Associate Software Engineer",
-      "salary": "450000",
-      "doj": "2020-11-02",
-      "skills": "3",
-      "id": 51
-    },
-    {
-      "fname": "kalpesh",
-      "lname": "thombre",
-      "designation": "Software Engineer",
-      "salary": "750000",
-      "doj": "2020-11-02",
-      "skills": "3",
-      "id": 52
     }
   ]
 }
