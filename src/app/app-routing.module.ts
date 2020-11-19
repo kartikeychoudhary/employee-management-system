@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AddEmployeeComponent } from './pages/add-employee/add-employee.component';
+import { AdminTicketsComponent } from './pages/admin-tickets/admin-tickets.component';
 import { EditEmployeeComponent } from './pages/edit-employee/edit-employee.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -8,6 +9,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { RegisterComponent } from './pages/register';
 import { SearchEmployeeComponent } from './pages/search-employee/search-employee.component';
 import { StatusComponent } from './pages/status/status.component';
+import { TicketRaiseComponent } from './pages/ticket-raise/ticket-raise.component';
 import { ViewEmployeesComponent } from './pages/view-employees/view-employees.component';
 import { AuthGuard } from './_helpers';
 // import { AuthGuard } from './_helpers';
@@ -22,6 +24,8 @@ const routes: Routes = [
   { path: 'search-employees', component: SearchEmployeeComponent},
   { path: 'status', component: StatusComponent},
   { path: 'profile', component: ProfileComponent},
+  { path: 'raise-ticket', component: TicketRaiseComponent},
+  { path: 'admin-ticket', component: AdminTicketsComponent},
 
 
   // otherwise redirect to home

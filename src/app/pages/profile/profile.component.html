@@ -10,6 +10,7 @@
             formControlName="fname"
             class="form-control"
             [ngClass]="{ 'is-invalid': submitted && f.fname.errors }"
+            disabled
           />
           <div *ngIf="submitted && f.fname.errors" class="invalid-feedback">
             <div *ngIf="f.fname.errors.required">First Name is required</div>
@@ -22,6 +23,7 @@
             formControlName="lname"
             class="form-control"
             [ngClass]="{ 'is-invalid': submitted && f.lname.errors }"
+            disabled
           />
           <div *ngIf="submitted && f.lname.errors" class="invalid-feedback">
             <div *ngIf="f.lname.errors.required">Last Name is required</div>
@@ -37,6 +39,8 @@
         formControlName="designation"
         class="form-control"
         [ngClass]="{ 'is-invalid': submitted && f.designation.errors }"
+        disabled
+
       >
         <option value="Associate Software Engineer">
           Associate Software Engineer

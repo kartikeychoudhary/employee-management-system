@@ -36,4 +36,27 @@ export class EmployeeBackend {
     .patch(`http://localhost:6565/employee_data/${id}`, data,httpOptions)
     .pipe(map((response:Response)=> response));
   }
+
+  raiseTicket(data){
+    return this.http
+    .patch(`http://localhost:6565/tickets`, data, httpOptions)
+    .pipe(map((response:Response)=>response));
+  }
+
+  raiseTicketDetails(data){
+    return this.http.patch(`http://localhost:6565/tickets_details`, data, httpOptions)
+    .pipe(map((response:Response)=>{response}));
+  }
+
+  getTickets(){
+    return this.http
+    .get(`http://localhost:6565/tickets`, httpOptions)
+    .pipe(map((response:Response)=>response));
+  }
+
+  getTicketsDetails(){
+    return this.http
+    .get(`http://localhost:6565/tickets_details`, httpOptions)
+    .pipe(map((response:Response)=>response));
+  }
 }

@@ -1,25 +1,94 @@
-<div class="list-group" *ngIf="logInState">
-    <a href="view-employees" class="list-group-item list-group-item-action flex-column align-items-start" *ngIf="admin">
-       View Employees
-    </a>
-    <a href="add-employee" class="list-group-item list-group-item-action flex-column align-items-start" *ngIf="admin">
-        Add Employee
-    </a>
-    <a href="search-employees" class="list-group-item list-group-item-action flex-column align-items-start">
-        Search Employees
-    </a>
-    <a href="profile" class="list-group-item list-group-item-action flex-column align-items-start">
-        Profile
-     </a>
-     <a href="status" class="list-group-item list-group-item-action flex-column align-items-start" *ngIf="admin">
-        Status
-     </a>
+<div class="list-group shadow-lg" *ngIf="logInState">
+  <a
+    href="view-employees"
+    [ngClass]="
+      active === 'view-employees'
+        ? 'list-group-item list-group-item-action flex-column align-items-start bg-dark text-white'
+        : 'list-group-item list-group-item-action flex-column align-items-start'
+    "
+    *ngIf="admin"
+  >
+    View Employees
+  </a>
+  <a
+    href="add-employee"
+    [ngClass]="
+    active === 'add-employee'
+      ? 'list-group-item list-group-item-action flex-column align-items-start bg-dark text-white'
+      : 'list-group-item list-group-item-action flex-column align-items-start'
+  "    *ngIf="admin"
+  >
+    Add Employee
+  </a>
+  <a
+    href="search-employees"
+    [ngClass]="
+    active === 'search-employees'
+      ? 'list-group-item list-group-item-action flex-column align-items-start bg-dark text-white'
+      : 'list-group-item list-group-item-action flex-column align-items-start'
+  "  >
+    Search Employees
+  </a>
 
-     <a href="/" class="list-group-item list-group-item-action flex-column align-items-start" (click)="logout()">
-        Logout
-     </a>
+  <a
+    href="admin-ticket"
+     [ngClass]="
+      active === 'admin-ticket'
+        ? 'list-group-item list-group-item-action flex-column align-items-start bg-dark text-white'
+        : 'list-group-item list-group-item-action flex-column align-items-start'
+    "
+    *ngIf="admin"
+  >
+    Manage Tickets
+  </a>
+
+  <a
+    href="raise-ticket"
+     [ngClass]="
+      active === 'raise-ticket'
+        ? 'list-group-item list-group-item-action flex-column align-items-start bg-dark text-white'
+        : 'list-group-item list-group-item-action flex-column align-items-start'
+    "
+    *ngIf="!admin"
+  >
+    Raise Tickets
+  </a>
+
+  <a
+    href="profile"
+     [ngClass]="
+      active === 'profile'
+        ? 'list-group-item list-group-item-action flex-column align-items-start bg-dark text-white'
+        : 'list-group-item list-group-item-action flex-column align-items-start'
+    "
+  >
+    Profile
+  </a>
+  <a
+    href="status"
+     [ngClass]="
+      active === 'status'
+        ? 'list-group-item list-group-item-action flex-column align-items-start bg-dark text-white'
+        : 'list-group-item list-group-item-action flex-column align-items-start'
+    "
+    *ngIf="admin"
+  >
+    Status
+  </a>
+
+  <a
+    href="/"
+    class="list-group-item list-group-item-action flex-column align-items-start"
+    (click)="logout()"
+  >
+    Logout
+  </a>
 </div>
 
 <div class="img img-fluid" *ngIf="!logInState">
-   <img src="https://picsum.photos/800/800?random=2" alt="" class="card-img-top">
+  <img
+    src="https://picsum.photos/800/800?random=2"
+    alt=""
+    class="card-img-top"
+  />
 </div>

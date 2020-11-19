@@ -1,4 +1,29 @@
 {
+  "tickets": {
+    "username": [],
+    "ethelda_1": [
+      "1605680283141",
+      "1605681229151"
+    ]
+  },
+  "tickets_details": {
+    "1605680283141": {
+      "fname": "Ethelda",
+      "lname": "MacGilpatrick",
+      "designation": "Team Lead",
+      "issue": "Xornet nahi chlra thik krke do",
+      "department": "Admin",
+      "status": "completed"
+    },
+    "1605681229151": {
+      "fname": "Ethelda",
+      "lname": "MacGilpatrick",
+      "designation": "Team Lead",
+      "issue": "Xornet nahi chlra thik krke do",
+      "department": "Admin",
+      "status": "awaited"
+    }
+  },
   "employee": {
     "ethelda_1": {
       "password": 12345678,
@@ -210,7 +235,7 @@
       "designation": "Team Lead",
       "salary": 850000,
       "doj": "9/30/2009",
-      "skills": 3
+      "skills": "C# , C++ , HTML , Java  , JavaScript , Perl  , PHP  , Python, Angular, React, Django, Mongo Db"
     },
     {
       "id": 2,
@@ -219,7 +244,7 @@
       "designation": "Senior Software Engineer",
       "salary": 850000,
       "doj": "5/14/2002",
-      "skills": 3
+      "skills": "C# , C++ , HTML , Java  , JavaScript , Perl  , PHP  , Python, Angular, React, Django, Mongo Db"
     },
     {
       "id": 3,
@@ -228,7 +253,7 @@
       "designation": "Technical Lead",
       "salary": 1250000,
       "doj": "2/11/2009",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 4,
@@ -237,7 +262,7 @@
       "designation": "Team Lead",
       "salary": 1050000,
       "doj": "6/11/2010",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 5,
@@ -246,7 +271,7 @@
       "designation": "Senior Technical Lead",
       "salary": 1250000,
       "doj": "9/22/2004",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 6,
@@ -255,7 +280,7 @@
       "designation": "Senior Technical Lead",
       "salary": 1250000,
       "doj": "7/11/2010",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 7,
@@ -264,7 +289,7 @@
       "designation": "Technical Manager",
       "salary": 1500000,
       "doj": "12/30/2002",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 8,
@@ -273,7 +298,7 @@
       "designation": "Associate Software Engineer",
       "salary": 450000,
       "doj": "8/27/2007",
-      "skills": 1
+      "skills": "C# , C++ , HTML , Java  , JavaScript , Angular , React"
     },
     {
       "id": 9,
@@ -282,7 +307,7 @@
       "designation": "Technical Manager",
       "salary": 1500000,
       "doj": "2/9/2009",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 10,
@@ -291,7 +316,7 @@
       "designation": "Team Lead",
       "salary": 1050000,
       "doj": "11/5/2003",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 11,
@@ -300,7 +325,7 @@
       "designation": "Associate Software Engineer",
       "salary": "450000",
       "doj": "7/13/2004",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 12,
@@ -309,7 +334,7 @@
       "designation": "Technical Manager",
       "salary": 1500000,
       "doj": "9/18/2020",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 13,
@@ -318,7 +343,7 @@
       "designation": "Technical Manager",
       "salary": 1500000,
       "doj": "10/20/2002",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 14,
@@ -327,7 +352,7 @@
       "designation": "Technical Lead",
       "salary": 1250000,
       "doj": "11/22/2002",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 15,
@@ -336,7 +361,7 @@
       "designation": "Senior Software Engineer",
       "salary": 850000,
       "doj": "3/23/2011",
-      "skills": 3
+      "skills": "C# , C++ , HTML , Java  , JavaScript , Perl  , PHP  , Python, Angular, React, Django, Mongo Db"
     },
     {
       "id": 16,
@@ -345,7 +370,7 @@
       "designation": "Team Lead",
       "salary": 1050000,
       "doj": "10/22/2012",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 17,
@@ -354,7 +379,7 @@
       "designation": "Technical Lead",
       "salary": 1250000,
       "doj": "6/20/2010",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 18,
@@ -363,7 +388,7 @@
       "designation": "Senior Technical Lead",
       "salary": 1250000,
       "doj": "8/20/2001",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 19,
@@ -372,7 +397,7 @@
       "designation": "Team Lead",
       "salary": 1050000,
       "doj": "4/25/2012",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 20,
@@ -381,7 +406,7 @@
       "designation": "Associate Software Engineer",
       "salary": 450000,
       "doj": "7/2/2009",
-      "skills": 1
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Angular, React"
     },
     {
       "id": 21,
@@ -390,7 +415,7 @@
       "designation": "Associate Software Engineer",
       "salary": 450000,
       "doj": "5/27/2013",
-      "skills": 1
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Angular, React"
     },
     {
       "id": 22,
@@ -399,7 +424,7 @@
       "designation": "Technical Lead",
       "salary": 1250000,
       "doj": "3/12/2017",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 23,
@@ -408,7 +433,7 @@
       "designation": "Associate Software Engineer",
       "salary": "450000",
       "doj": "9/16/2007",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 24,
@@ -417,7 +442,7 @@
       "designation": "Team Lead",
       "salary": 1050000,
       "doj": "10/10/2007",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 25,
@@ -426,7 +451,7 @@
       "designation": "Associate Software Engineer",
       "salary": "450000",
       "doj": "3/29/2010",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 26,
@@ -435,7 +460,7 @@
       "designation": "Software Engineer",
       "salary": 650000,
       "doj": "12/10/2006",
-      "skills": 2
+      "skills": "C# , C++ , HTML , Java  , JavaScript , Angular , React, Django"
     },
     {
       "id": 27,
@@ -453,7 +478,7 @@
       "designation": "Team Lead",
       "salary": 1050000,
       "doj": "2/2/2006",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 29,
@@ -462,7 +487,7 @@
       "designation": "Technical Lead",
       "salary": 1250000,
       "doj": "11/14/2011",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 30,
@@ -471,7 +496,7 @@
       "designation": "Associate Software Engineer",
       "salary": "450000",
       "doj": "1/24/2002",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 31,
@@ -480,7 +505,7 @@
       "designation": "Project Manager",
       "salary": "450000",
       "doj": "10/23/2009",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 32,
@@ -489,7 +514,7 @@
       "designation": "Senior Software Engineer",
       "salary": 850000,
       "doj": "10/3/2016",
-      "skills": 3
+      "skills": "C# , C++ , HTML , Java  , JavaScript , Perl  , PHP  , Python, Angular, React, Django, Mongo Db"
     },
     {
       "id": 33,
@@ -498,7 +523,7 @@
       "designation": "Associate Software Engineer",
       "salary": 450000,
       "doj": "4/3/2010",
-      "skills": 1
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Angular, React"
     },
     {
       "id": 34,
@@ -507,7 +532,7 @@
       "designation": "Associate Software Engineer",
       "salary": 450000,
       "doj": "4/27/2004",
-      "skills": 1
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Angular, React"
     },
     {
       "id": 35,
@@ -516,7 +541,7 @@
       "designation": "Associate Software Engineer",
       "salary": "450000",
       "doj": "7/6/2002",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 36,
@@ -525,7 +550,7 @@
       "designation": "Software Engineer",
       "salary": 650000,
       "doj": "12/23/2011",
-      "skills": 2
+      "skills": "C# , C++ , HTML , Java  , JavaScript , Angular , React, Django"
     },
     {
       "id": 37,
@@ -534,7 +559,7 @@
       "designation": "Associate Software Engineer",
       "salary": "450000",
       "doj": "4/13/2001",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 38,
@@ -543,7 +568,7 @@
       "designation": "Associate Software Engineer",
       "salary": "450000",
       "doj": "4/9/2013",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 39,
@@ -552,7 +577,7 @@
       "designation": "Senior Technical Lead",
       "salary": 1250000,
       "doj": "8/15/2001",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 40,
@@ -561,7 +586,7 @@
       "designation": "Technical Manager",
       "salary": 1500000,
       "doj": "11/29/2004",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 41,
@@ -570,7 +595,7 @@
       "designation": "Associate Software Engineer",
       "salary": "450000",
       "doj": "12/20/2013",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 42,
@@ -579,7 +604,7 @@
       "designation": "Associate Software Engineer",
       "salary": "450000",
       "doj": "6/29/2019",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 43,
@@ -588,7 +613,7 @@
       "designation": "Team Lead",
       "salary": 1050000,
       "doj": "9/2/2019",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 44,
@@ -597,7 +622,7 @@
       "designation": "Software Engineer",
       "salary": 650000,
       "doj": "12/20/2014",
-      "skills": 2
+      "skills": "C# , C++ , HTML , Java  , JavaScript , Angular , React, Django"
     },
     {
       "id": 45,
@@ -606,7 +631,7 @@
       "designation": "Senior Technical Lead",
       "salary": 1250000,
       "doj": "9/10/2011",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 46,
@@ -615,7 +640,7 @@
       "designation": "Senior Technical Lead",
       "salary": 1250000,
       "doj": "4/26/2014",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 47,
@@ -624,7 +649,7 @@
       "designation": "Technical Lead",
       "salary": 1250000,
       "doj": "7/1/2018",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 48,
@@ -633,7 +658,7 @@
       "designation": "Team Lead",
       "salary": 1050000,
       "doj": "1/28/2011",
-      "skills": 4
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow"
     },
     {
       "id": 49,
@@ -642,7 +667,7 @@
       "designation": "Project Manager",
       "salary": 1800000,
       "doj": "6/12/2003",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     },
     {
       "id": 50,
@@ -651,7 +676,7 @@
       "designation": "Project Manager",
       "salary": 1800000,
       "doj": "8/28/2013",
-      "skills": 5
+      "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
     }
   ]
 }

@@ -20,7 +20,7 @@ export class SidebarAdminComponent implements OnInit {
   ngOnInit(): void {
     var temp = window.location.href.split('/');
     this.active = temp[temp.length - 1];
-
+    console.log(this.active)
     if(localStorage.getItem("currentUser")){
       if(localStorage.getItem("role")==="admin"){
         this.admin = true;
@@ -30,6 +30,7 @@ export class SidebarAdminComponent implements OnInit {
   }
 
   logout() {
+    
     this.authenticationService.logout();
     localStorage.setItem("lastLogin", new Date().toLocaleString());
     this.router.navigate(['/']);

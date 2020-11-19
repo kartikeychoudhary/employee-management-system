@@ -12,61 +12,84 @@ export class AdminBackend {
   public static baseUrl: 'http://localhost:6565/';
 
   constructor(private http: HttpClient) {
-      console.log("test")
+    console.log('test');
   }
 
   getEmployee() {
-    return this.http
-      .get('http://localhost:6565/employee', httpOptions)
-      .pipe(map((response: Response) => {
-          console.log(response);
-
-          return response}));
-  }
-  
-  getEmployeeData(id:number){
-    return this.http
-    .get(`http://localhost:6565/employee_data/${id.toString()}`, httpOptions)
-    .pipe(map((response: Response) => {
+    return this.http.get('http://localhost:6565/employee', httpOptions).pipe(
+      map((response: Response) => {
         console.log(response);
-        return response}));
+
+        return response;
+      })
+    );
   }
 
-  getEmployeeDataAll(){
+  getEmployeeData(id: number) {
     return this.http
-    .get('http://localhost:6565/employee_data', httpOptions)
-    .pipe(map((response: Response) => response), tap(employees=>employees));
+      .get(`http://localhost:6565/employee_data/${id.toString()}`, httpOptions)
+      .pipe(
+        map((response: Response) => {
+          console.log(response);
+          return response;
+        })
+      );
   }
 
-  addEmployeeData(data){
+  getEmployeeDataAll() {
     return this.http
-    .post('http://localhost:6565/employee_data', data,httpOptions)
-    .pipe(map((response:Response)=> response));
+      .get('http://localhost:6565/employee_data', httpOptions)
+      .pipe(
+        map((response: Response) => response),
+        tap((employees) => employees)
+      );
   }
 
-  addEmployee(data){
+  addEmployeeData(data) {
     return this.http
-    .patch('http://localhost:6565/employee', data,httpOptions)
-    .pipe(map((response:Response)=> response));
+      .post('http://localhost:6565/employee_data', data, httpOptions)
+      .pipe(map((response: Response) => response));
   }
 
-  updateEmployeeData(data, id){
+  addEmployee(data) {
     return this.http
-    .patch(`http://localhost:6565/employee_data/${id}`, data,httpOptions)
-    .pipe(map((response:Response)=> response));
+      .patch('http://localhost:6565/employee', data, httpOptions)
+      .pipe(map((response: Response) => response));
   }
 
-  deleteEmployeeData(id){
+  updateEmployeeData(data, id) {
     return this.http
-    .delete(`http://localhost:6565/employee_data/${id}`, httpOptions)
-    .pipe(map((response:Response)=> response));
+      .patch(`http://localhost:6565/employee_data/${id}`, data, httpOptions)
+      .pipe(map((response: Response) => response));
   }
 
-  deleteEmployee(username){
-    var temp = {}
-    temp[username] = {id:"deleted", password:"deleted"}
+  deleteEmployeeData(id) {
     return this.http
-    .patch('http://localhost:6565/employee',temp,httpOptions)
-    .pipe(map((response:Response)=> response));
+      .delete(`http://localhost:6565/employee_data/${id}`, httpOptions)
+      .pipe(map((response: Response) => response));
+  }
+
+  deleteEmployee(username) {
+    var temp = {};
+    temp[username] = { id: 'deleted', password: 'deleted' };
+    return this.http
+      .patch('http://localhost:6565/employee', temp, httpOptions)
+      .pipe(map((response: Response) => response));
+  }
+
+  getTicketsDetails() {
+    return this.http
+      .get(`http://localhost:6565/tickets_details`, httpOptions)
+      .pipe(map((response: Response) => response));
+  }
+
+  changeTicketsStatus(data) {
+    return this.http
+      .patch(`http://localhost:6565/tickets_details`, data, httpOptions)
+      .pipe(
+        map((response: Response) => {
+          response;
+        })
+      );
   }
 }

@@ -21,6 +21,10 @@ export class SearchEmployeeComponent implements OnInit {
   startDate:number;
   endDate:number;
 
+  keywords:any[]=[];
+  keyword:string;
+
+
   constructor(private adminBackend: AdminBackend, private router: Router) {}
 
   refresh() {
@@ -42,6 +46,14 @@ export class SearchEmployeeComponent implements OnInit {
     });
   }
 
+  returnSearchInput(){
+    if(this.searchKey === 'dojR' || this.searchKey === 'skills'){
+      return false;
+    }else{
+      return true;
+    }
+  }
+
   onKey(event: any) { // without type info
     if(event.key === "Backspace"){
       this.search = "";
@@ -49,6 +61,21 @@ export class SearchEmployeeComponent implements OnInit {
     }
     this.search = event.target.value;
     this.Search();
+  }
+
+  addKeyword(){
+    this.keywords.push(this.keyword);
+    this.employees = this.employees.filter(res=>{ 
+      return res['skills'].toString().toLocaleLowerCase().match(this.keyword.toLocaleLowerCase());
+    })
+    console.log(this.employees.length)
+    this.keyword = "";
+  }
+
+  resetKeyword(){
+    this.ngOnInit();
+    this.keyword = "";
+    this.keywords = [];
   }
 
   handleSearchType(event:any){
@@ -87,18 +114,9 @@ export class SearchEmployeeComponent implements OnInit {
     if(this.search == ""){
       this.ngOnInit();
     }else{
-      if(this.searchKey === 'doj'){
-        var startDate = "01/01/2009";
-        var endDate = "01/01/2020";
-        var count = 0
-        
-        console.log(count)
-      }else{
-        this.employees = this.employees.filter(res=>{
-          return res[this.searchKey].toLocaleLowerCase().match(this.search.toLocaleLowerCase());
+        this.employees = this.employees.filter(res=>{ 
+          return res[this.searchKey].toString().toLocaleLowerCase().match(this.search.toString().toLocaleLowerCase());
         })
-      }
-      
     }
   }
 

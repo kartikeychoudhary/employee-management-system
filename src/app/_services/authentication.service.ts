@@ -34,6 +34,7 @@ export class AuthenticationService {
               throw "User Deleted"
             }
             localStorage.setItem('currentUser', data['id']);
+            localStorage.setItem('username', username.toString().toLowerCase());
             if(data['role']){
                 localStorage.setItem('role',data['role']);
             }

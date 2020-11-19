@@ -24,6 +24,8 @@ import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import {Ng2OrderModule} from 'ng2-order-pipe';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { ChartsModule } from 'ng2-charts';
+import { TicketRaiseComponent } from './pages/ticket-raise/ticket-raise.component';
+import { AdminTicketsComponent } from './pages/admin-tickets/admin-tickets.component';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { ChartsModule } from 'ng2-charts';
         TableRowComponent,
         SearchEmployeeComponent,
         ProfileComponent,
+        TicketRaiseComponent,
+        AdminTicketsComponent,
         
     ],
     providers: [

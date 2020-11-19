@@ -27,6 +27,14 @@ export class ProfileComponent implements OnInit {
   ) {}
 
   refresh() {
+    this.loginForm = this.formBuilder.group({
+      fname: ['', Validators.required],
+      lname: ['', Validators.required],
+      designation: ['', Validators.required],
+      salary: ['', Validators.required],
+      doj: ['', Validators.required],
+      skills: ['', Validators.required],
+    });
     this.employeeBackend.getEmployeeData(parseInt(this.id)).subscribe((employee: any) => {
       this.employee = new EmployeeData(
         employee['id'],

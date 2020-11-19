@@ -1,0 +1,95 @@
+<div class="card p-4">
+  <h2>Raise Tickets</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-12">
+          <label for="issue">Issue</label>
+          <input
+            type="text"
+            formControlName="issue"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.issue.errors }"
+          />
+          <div *ngIf="submitted && f.issue.errors" class="invalid-feedback">
+            <div *ngIf="f.issue.errors.required">State your Issue.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="department">Type of Issue Department</label>
+
+      <select
+        formControlName="department"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.department.errors }"
+      >
+        <option value="Admin">Admin</option>
+        <option value="Covid19Incident">Covid19Incident</option>
+        <option value="Delivery Management System">
+          Delivery Management System
+        </option>
+        <option value="e-Timesheet">e-Timesheet</option>
+        <option value="e-Travel">e-Travel</option>
+        <option value="Jira">Jira</option>
+        <option value="Payroll">Payroll</option>
+        <option value="VISA">VISA</option>
+      </select>
+      <div *ngIf="submitted && f.department.errors" class="invalid-feedback">
+        <div *ngIf="f.department.errors.required">
+          Issue Department is required
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group text-center">
+      <button [disabled]="loading" class="btn btn-primary">
+        <span
+          *ngIf="loading"
+          class="spinner-border spinner-border-sm mr-1"
+        ></span>
+        Raise Ticket
+      </button>
+    </div>
+  </form>
+</div>
+
+<div class="card">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Issue</th>
+        <th>Department</th>
+        <th>status</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="tickets">
+      <tr *ngFor="let ticket of tickets">
+        <td scope="row" *ngIf="tickets_details">
+          {{ tickets_details[ticket]["issue"] }}
+        </td>
+        <td scope="row" *ngIf="tickets_details">
+          {{ tickets_details[ticket]["department"] }}
+        </td>
+        <td scope="row" *ngIf="tickets_details">
+          <i
+            class="fas fa-info-circle text-warning fa-lg"
+            aria-hidden="true"
+            *ngIf="tickets_details[ticket]['status'] === 'awaited'"
+          >{{" "}}Awaited</i>
+          <i
+            class="fas fa-spinner text-primary fa-lg"
+            aria-hidden="true"
+            *ngIf="tickets_details[ticket]['status'] === 'progress'"
+          > {{" "}}In Progress</i>
+          <i
+            class="fas fa-check-circle text-success fa-lg"
+            aria-hidden="true"
+            *ngIf="tickets_details[ticket]['status'] === 'completed'"
+          > {{" "}}Completed</i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
