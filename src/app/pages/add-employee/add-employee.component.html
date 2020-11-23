@@ -1,111 +1,122 @@
 <div class="card p-4">
+  <h2>Add Employee</h2>
+  <hr />
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-6">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            formControlName="fname"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.fname.errors }"
+          />
+          <div *ngIf="submitted && f.fname.errors" class="invalid-feedback">
+            <div *ngIf="f.fname.errors.required">First Name is required</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            formControlName="lname"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.lname.errors }"
+          />
+          <div *ngIf="submitted && f.lname.errors" class="invalid-feedback">
+            <div *ngIf="f.lname.errors.required">Last Name is required</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<h2>Add Employee</h2>
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <div class="form-group">
     <div class="row">
       <div class="col-6">
-        <label for="fname">First Name</label>
-        <input
-          type="text"
-          formControlName="fname"
-          class="form-control"
-          [ngClass]="{ 'is-invalid': submitted && f.fname.errors }"
-        />
-        <div *ngIf="submitted && f.fname.errors" class="invalid-feedback">
-          <div *ngIf="f.fname.errors.required">First Name is required</div>
+        <div class="form-group">
+          <label for="designation">Designation</label>
+
+          <select
+            formControlName="designation"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.designation.errors }"
+          >
+            <option value="Associate Software Engineer">
+              Associate Software Engineer
+            </option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Senior Software Engineer">
+              Senior Software Engineer
+            </option>
+            <option value="Team Lead">Team Lead</option>
+            <option value="Technical Lead">Technical Lead</option>
+            <option value="Senior Technical Lead">Senior Technical Lead</option>
+            <option value="Technical Manager">Technical Manager</option>
+            <option value="Project Manager">Project Manager</option>
+          </select>
+          <div
+            *ngIf="submitted && f.designation.errors"
+            class="invalid-feedback"
+          >
+            <div *ngIf="f.designation.errors.required">
+              Designation is required
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-6">
-        <label for="lname">Last Name</label>
-        <input
-          type="text"
-          formControlName="lname"
-          class="form-control"
-          [ngClass]="{ 'is-invalid': submitted && f.lname.errors }"
-        />
-        <div *ngIf="submitted && f.lname.errors" class="invalid-feedback">
-          <div *ngIf="f.lname.errors.required">Last Name is required</div>
+        <div class="form-group">
+          <label for="salary">Salary</label>
+          <input
+            type="text"
+            formControlName="salary"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.salary.errors }"
+          />
+          <div *ngIf="submitted && f.salary.errors" class="invalid-feedback">
+            <div *ngIf="f.salary.errors.required">Salary is required</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="form-group">
-    <label for="designation">Designation</label>
 
-    <select
-      formControlName="designation"
-      class="form-control"
-      [ngClass]="{ 'is-invalid': submitted && f.designation.errors }"
-    >
-      <option value="Associate Software Engineer">
-        Associate Software Engineer
-      </option>
-      <option value="Software Engineer">Software Engineer</option>
-      <option value="Senior Software Engineer">Senior Software Engineer</option>
-      <option value="Team Lead">Team Lead</option>
-      <option value="Technical Lead">Technical Lead</option>
-      <option value="Senior Technical Lead">Senior Technical Lead</option>
-      <option value="Technical Manager">Technical Manager</option>
-      <option value="Project Manager">Project Manager</option>
-    </select>
-    <div *ngIf="submitted && f.designation.errors" class="invalid-feedback">
-      <div *ngIf="f.designation.errors.required">Designation is required</div>
+    <div class="form-group">
+      <label for="doj">Date of Joining</label>
+      <input
+        class="form-control"
+        type="date"
+        value="2011-08-19"
+        formControlName="doj"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.doj.errors }"
+      />
+
+      <div *ngIf="submitted && f.doj.errors" class="invalid-feedback">
+        <div *ngIf="f.doj.errors.required">Date of Joining is Required</div>
+      </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <label for="salary">Salary</label>
-    <input
-      type="text"
-      formControlName="salary"
-      class="form-control"
-      [ngClass]="{ 'is-invalid': submitted && f.salary.errors }"
-    />
-    <div *ngIf="submitted && f.salary.errors" class="invalid-feedback">
-      <div *ngIf="f.salary.errors.required">Salary is required</div>
+    <div class="form-group">
+      <label for="skills">Skills</label>
+      <input
+        type="skills"
+        formControlName="skills"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.skills.errors }"
+      />
+      <div *ngIf="submitted && f.skills.errors" class="invalid-feedback">
+        <div *ngIf="f.skills.errors.required">Skills are required</div>
+      </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <label for="doj">Date of Joining</label>
-    <input
-      class="form-control"
-      type="date"
-      value="2011-08-19"
-      formControlName="doj"
-      class="form-control"
-      [ngClass]="{ 'is-invalid': submitted && f.doj.errors }"
-    />
-
-    <div *ngIf="submitted && f.doj.errors" class="invalid-feedback">
-      <div *ngIf="f.doj.errors.required">Date of Joining is Required</div>
+    <div class="form-group text-center">
+      <button [disabled]="loading" class="btn btn-primary">
+        <span
+          *ngIf="loading"
+          class="spinner-border spinner-border-sm mr-1"
+        ></span>
+        Add Employee
+      </button>
     </div>
-  </div>
-
-  <div class="form-group">
-    <label for="skills">Skills</label>
-    <input
-      type="skills"
-      formControlName="skills"
-      class="form-control"
-      [ngClass]="{ 'is-invalid': submitted && f.skills.errors }"
-    />
-    <div *ngIf="submitted && f.skills.errors" class="invalid-feedback">
-      <div *ngIf="f.skills.errors.required">Skills are required</div>
-    </div>
-  </div>
-
-  <div class="form-group text-center">
-    <button [disabled]="loading" class="btn btn-primary">
-      <span
-        *ngIf="loading"
-        class="spinner-border spinner-border-sm mr-1"
-      ></span>
-      Add Employee
-    </button>
-  </div>
-</form>
-
-
+  </form>
 </div>

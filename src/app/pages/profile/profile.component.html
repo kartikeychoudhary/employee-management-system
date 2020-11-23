@@ -1,5 +1,50 @@
 <div class="card p-4">
-  <h2>Profile</h2>
+  <div class="row">
+    <div class="col-10"><h2>Profile</h2>
+    </div>
+    <div class="col-2">
+      <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#modelId">
+      Change Password
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">You are about to change your password.</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            
+            <div class="form-group">
+              <label for="">Current Password</label>
+              <input type="text"
+                class="form-control" [(ngModel)]="currentPass" aria-describedby="helpId" placeholder="Current Password">
+            </div>
+
+            <div class="form-group">
+              <label for="">New Password</label>
+              <input type="text"
+                class="form-control"  [(ngModel)]="newPass" aria-describedby="helpId" placeholder="New Password">
+            </div>
+
+            <div class="form-group">
+              <label for="">Re-enter new password</label>
+              <input type="text"
+                class="form-control"  [(ngModel)]="newPass2" aria-describedby="helpId" placeholder="New Password">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="updatePassword()">Update</button>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </div>
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <div class="row">

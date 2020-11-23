@@ -4,6 +4,9 @@
     "ethelda_1": [
       "1605680283141",
       "1605681229151"
+    ],
+    "kartikey_51": [
+      "1606109303475"
     ]
   },
   "tickets_details": {
@@ -22,6 +25,14 @@
       "issue": "Xornet nahi chlra thik krke do",
       "department": "Admin",
       "status": "awaited"
+    },
+    "1606109303475": {
+      "fname": "Kartikey",
+      "lname": "Choudhary",
+      "designation": "Associate Software Engineer",
+      "issue": "Covid",
+      "department": "Covid19Incident",
+      "status": "progress"
     }
   },
   "employee": {
@@ -225,6 +236,18 @@
     "jobyna_50": {
       "password": 12345678,
       "id": 50
+    },
+    "kartikey_51": {
+      "id": 51,
+      "password": "12345678"
+    },
+    "Kartikey_51": {
+      "id": "deleted",
+      "password": "deleted"
+    },
+    "kalpesh_52": {
+      "id": 52,
+      "password": "12345678"
     }
   },
   "employee_data": [
@@ -677,6 +700,24 @@
       "salary": 1800000,
       "doj": "8/28/2013",
       "skills": "C# , C++ , HTML , Java  , JavaScript, Python, Angular, React, Django, Mongo Db, Machine Learning, Deep Learning, NLP, TensorFlow, Scikit Learn, OpenCV2, Azure, AWS"
+    },
+    {
+      "fname": "Kartikey",
+      "lname": "Choudhary",
+      "designation": "Associate Software Engineer",
+      "salary": "450000",
+      "doj": "2020-11-02",
+      "skills": "Angular, React, Python, Android, Dart, Flutter, Firebase",
+      "id": 51
+    },
+    {
+      "fname": "kalpesh",
+      "lname": "thombre",
+      "designation": "Associate Software Engineer",
+      "salary": "4500000",
+      "doj": "2020-11-02",
+      "skills": "Angular",
+      "id": 52
     }
   ]
 }

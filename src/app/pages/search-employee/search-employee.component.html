@@ -51,6 +51,19 @@
       </div>
     </div>
 
+    <div class="col-9" *ngIf="searchKey === 'salaryR'">
+      <label for="search">Select Range</label>
+      <div class="row">
+        <div class="col-10">
+          <ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ngx-slider>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-outline-primary" (click)="salaryRange()">Search</button>
+        </div>
+      </div>
+      
+    </div>
+
     <div class="col-3">
       <div class="form-group">
         <label for="searchType">Type</label>
@@ -58,9 +71,11 @@
           <option value="fname">Name</option>
           <option value="designation">Designation</option>
           <option value="salary" *ngIf="admin">Salary</option>
+          <option value="salaryR" *ngIf="admin">Salary (Range)</option>
           <option value="dojR" *ngIf="admin">Date of Joining (Range)</option>
           <option value="doj" *ngIf="admin">Date of Joining</option>
           <option value="skills" *ngIf="admin">Skills</option>
+
         </select>
       </div>
     </div>
@@ -174,7 +189,7 @@
             </td>
         </tr> -->
   </tbody>
-  <tfoot>
+  <tfoot class="bg-dark text-white">
     <tr>
       <td colspan="7">
         <div class="text-end">

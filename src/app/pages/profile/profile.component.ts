@@ -18,6 +18,10 @@ export class ProfileComponent implements OnInit {
   submitted = false;
   returnUrl: string;
 
+  currentPass:string='';
+  newPass:string='';
+  newPass2:string='';
+
   constructor(
     private route: ActivatedRoute,
     private employeeBackend: EmployeeBackend,
@@ -25,6 +29,14 @@ export class ProfileComponent implements OnInit {
     private router: Router,
     private alertService: AlertService
   ) {}
+
+  updatePassword(){
+    if(this.newPass === this.newPass2){
+      this.alertService.success("Password Updated");
+    }else{
+      this.alertService.error("New Password does'nt match");
+    }
+  }
 
   refresh() {
     this.loginForm = this.formBuilder.group({
